@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="model-box">
+        <div class="badge-overlay">
+          <span class="top-left badge">offer</span>
+        </div>
+        <div class="close">
+          <img class="btn" src="images/close.png" onclick="closeFunction()" />
+        </div>
+
+        <div class="content">
+          <div class="scroll">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+              odio? Saepe quidem amet fugiat ipsum magni temporibus sequi ipsa,
+              quasi aperiam placeat beatae quos nihil, nesciunt ratione
+              laboriosam debitis optio animi hic provident voluptas ullam
+              recusandae similique culpa! Atque et veniam repellendus dicta
+              vitae nostrum dolores, sequi fuga repellat quis minus
+              exercitationem officiis quibusdam impedit nesciunt iste quia
+              possimus expedita quis minus exercitationem officiis quibusdam
+              impedit
+            </p>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+              odio? Saepe quidem amet fugiat ipsum magni temporibus sequi ipsa,
+              quasi aperiam placeat beatae quos nihil, nesciunt ratione
+              laboriosam debitis optio animi hic provident voluptas ullam
+              recusandae similique culpa! Atque et veniam repellendus dicta
+              vitae nostrum dolores, sequi fuga repellat nesciunt iste quia
+              possimus expedita quis minus exercitationem officiis quibusdam
+              impedit minus exercitationem officiis quibusdam impedit
+            </p>
+          </div>
+          <button>
+            Confirm & Download
+            <div class="progress-wrapper">
+              <div class="inner"></div>
+              <div class="checkmark">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="circle">
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", () => {
+        button.classList.add("active");
+      });
+    </script>
+  </body>
+</html>
